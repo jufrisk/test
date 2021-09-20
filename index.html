@@ -7,20 +7,23 @@
 
   <body>
     <div id="app"></div>
-
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-    </style>
-    <button id="add-comment">Comment!</button>
-    <button id="remove-comments">Remove</button>
-    <textarea id="comment"></textarea>
-    <label for="ul">List:</label><br />
-    <ul id="ul"></ul>
+    <div class="menu-layout">
+      <button id="add-comment">Comment!</button>
+      <button id="remove-comments">Remove</button>
+      <textarea id="comment"></textarea>
+      <label for="ul">List:</label><br />
+      <ul id="ul"></ul>
+    </div>
+    <div class="comment">
+      <select>
+        <option value="1">Bad</option>
+        <option value="2">Ok</option>
+        <option value="3">Good</option>
+        <option value="4">Best</option>
+      </select>
+    </div>
     <script src="src/index.js"></script>
   </body>
+
+  <link rel="stylesheet" type="text/css" href="src/styles.css" />
 </html>

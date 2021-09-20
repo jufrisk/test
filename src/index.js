@@ -2,7 +2,7 @@ import "./styles.css";
 
 document.getElementById("app").innerHTML = `
   <h1>Hello World!</h1>
-  <table>
+  <table id="menu-table">
       <tr>
         <th>Name</th>
         <th>Price</th>
