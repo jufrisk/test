@@ -3,7 +3,7 @@ import "./styles.css";
 document.getElementById("app").innerHTML = `
   <h1>Hello World!</h1>
   <table id="menu-table">
-      <tr>
+      <tr class="header">
         <th>Name</th>
         <th>Price</th>
       </tr>

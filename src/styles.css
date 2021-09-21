@@ -2,14 +2,12 @@ body {
   font-family: Garamond;
 }
 
-table,
-header,
-h1 {
+.header {
   font-style: italic;
 }
 
 #menu-table {
-  float: left;
+  left: 0px;
   background-color: #f2f2f2;
   width: 100%;
 }
