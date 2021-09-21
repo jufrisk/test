@@ -35,9 +35,6 @@ document.getElementById("add-comment").onclick = function () {
   var li = document.createElement("li");
   var text = document.getElementById("comment");
   li.appendChild(document.createTextNode(text.value));
-  console.log(li);
-  ul.appendChild(li);
-  console.log(ul);
   var rating = document.getElementById("rating");
   var div = document.createElement("div");
   text.className += "comment-text";
@@ -48,6 +45,8 @@ document.getElementById("add-comment").onclick = function () {
     )
   );
   div.classList.add("comment");
+  ul.appendChild(div);
+  console.log(ul);
   console.log(text.value);
   document.getElementById("comment").value = "";
 };
