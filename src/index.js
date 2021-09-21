@@ -40,8 +40,8 @@ document.getElementById("add-comment").onclick = function () {
   console.log(ul);
   var rating = document.getElementById("rating").value;
   var div = document.createElement("div");
-  text.classList.add("comment-text");
-  rating.classList.add("comment-rating");
+  text.className += "comment-text";
+  rating.className += "comment-rating";
   div.appendChild(
     document.createTextNode("comment: " + text + ", rating: " + rating)
   );

@@ -4,6 +4,10 @@ body {
 
 .header {
   font-style: italic;
+  background-color: #5a5a5a;
+  border: 2px solid black;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 #menu-table {
@@ -15,10 +19,6 @@ body {
 
 tr:nth-child(even) {
   background-color: gainsboro;
-}
-tr:nth-child(1) {
-  background-color: #5a5a5a;
-  border: 2px solid black;
 }
 
 .menu-layout {
