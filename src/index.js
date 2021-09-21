@@ -33,20 +33,22 @@ document.getElementById("app").innerHTML = `
 var ul = document.getElementById("ul");
 document.getElementById("add-comment").onclick = function () {
   var li = document.createElement("li");
-  var text = document.getElementById("comment").value;
-  li.appendChild(document.createTextNode(text));
+  var text = document.getElementById("comment");
+  li.appendChild(document.createTextNode(text.value));
   console.log(li);
   ul.appendChild(li);
   console.log(ul);
-  var rating = document.getElementById("rating").value;
+  var rating = document.getElementById("rating");
   var div = document.createElement("div");
   text.className += "comment-text";
   rating.className += "comment-rating";
   div.appendChild(
-    document.createTextNode("comment: " + text + ", rating: " + rating)
+    document.createTextNode(
+      "comment: " + text.value + ", rating: " + rating.value
+    )
   );
   div.classList.add("comment");
-  console.log(div);
+  console.log(text.value);
   document.getElementById("comment").value = "";
 };
 document.getElementById("remove-comments").onclick = function () {

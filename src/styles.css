@@ -20,6 +20,9 @@ body {
 tr:nth-child(even) {
   background-color: gainsboro;
 }
+th {
+  background-color: yellow;
+}
 
 .menu-layout {
   text-align: center;
