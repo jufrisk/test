@@ -38,6 +38,15 @@ document.getElementById("add-comment").onclick = function () {
   console.log(li);
   ul.appendChild(li);
   console.log(ul);
+  var rating = document.getElementById("rating").value;
+  var div = document.createElement("div");
+  text.classList.add("comment-text");
+  rating.classList.add("comment-rating");
+  div.appendChild(
+    document.createTextNode("comment: " + text + ", rating: " + rating)
+  );
+  div.classList.add("comment");
+  console.log(div);
   document.getElementById("comment").value = "";
 };
 document.getElementById("remove-comments").onclick = function () {
