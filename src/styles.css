@@ -6,8 +6,6 @@ body {
   font-style: italic;
   background-color: #5a5a5a;
   border: 2px solid black;
-  padding-top: 2px;
-  padding-bottom: 2px;
 }
 
 #menu-table {
@@ -22,6 +20,8 @@ tr:nth-child(even) {
 }
 th {
   background-color: yellow;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .menu-layout {
